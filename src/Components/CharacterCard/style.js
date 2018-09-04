@@ -4,4 +4,9 @@ const Wrapper = styled.div`
   color: ${props => props.theme.color.red};
 `;
 
-export { Wrapper };
+const CharacterFeatureWrapper = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+`;
+
+export { Wrapper, CharacterFeatureWrapper };

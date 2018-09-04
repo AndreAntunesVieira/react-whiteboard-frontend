@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-
-import CharacterCard from 'Components/CharacterCard';
+import DefaultPage from 'Components/Views/DefaultPage';
+import { Instagram } from 'react-content-loader';
+import CharacterList from 'Components/CharacterList';
 
 class App extends Component {
   state = {
@@ -18,17 +18,13 @@ class App extends Component {
     const { peoples } = this.state;
 
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">React Whiteboard</h1>
-        </header>
-        <div className="App-intro">
-          {peoples.map(character => (
-            <CharacterCard key={character.name} name={character.name} />
-          ))}
-        </div>
-      </div>
+      <DefaultPage>
+        {peoples.length === 0 ? (
+          <Instagram />
+        ) : (
+          <CharacterList peoples={peoples} />
+        )}
+      </DefaultPage>
     );
   }
 }
