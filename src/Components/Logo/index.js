@@ -7,6 +7,4 @@ const LogoImg = styled.img`
   height: 80px;
 `;
 
-export default function Logo() {
-  return <LogoImg src={logo} alt="Logo" />;
-}
+export default () => <LogoImg src={logo} alt="Logo" />;

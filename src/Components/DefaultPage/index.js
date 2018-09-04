@@ -1,5 +1,5 @@
 import React from 'react';
-import Logo from 'src/Components/Icons/Logo';
+import Logo from 'Components/Logo';
 
 export default function DefaultPage({ children }) {
   return (

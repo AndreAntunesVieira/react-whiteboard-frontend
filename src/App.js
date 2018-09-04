@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import DefaultPage from 'Components/Views/DefaultPage';
+import DefaultPage from 'Components/DefaultPage/index';
 import { Instagram } from 'react-content-loader';
 import CharacterList from 'Components/CharacterList';
 
